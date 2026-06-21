@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: idempotency-key-study-be
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:idempotency_study}
+    username: ${DB_USERNAME:idempotency}
+    password: ${DB_PASSWORD:idempotency}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+
+server:
+  port: 8080

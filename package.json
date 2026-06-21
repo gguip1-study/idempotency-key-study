@@ -1,0 +1,18 @@
+{
+  "name": "idempotency-key-study",
+  "private": true,
+  "scripts": {
+    "build": "npm run build:fe",
+    "dev": "docker compose up --build",
+    "up": "docker compose up --build",
+    "down": "docker compose down",
+    "db:up": "docker compose up -d postgres",
+    "db:down": "docker compose down",
+    "dev:be": "cd idempotency-key-study-be && gradlew.bat bootRun",
+    "test": "npm run test:be",
+    "test:be": "cd idempotency-key-study-be && gradlew.bat test",
+    "dev:fe": "npm --prefix idempotency-key-study-fe run dev",
+    "build:fe": "npm --prefix idempotency-key-study-fe run build",
+    "preview:fe": "npm --prefix idempotency-key-study-fe run preview"
+  }
+}
