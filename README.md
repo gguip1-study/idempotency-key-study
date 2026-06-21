@@ -5,6 +5,7 @@ idempotency-key를 이용해 서버 API의 멱등성을 보장하는 방법을 �
 ## Docs
 
 - [멱등성과 Idempotency-Key 학습 노트](docs/idempotency.md)
+- [1단계: 멱등성 없는 중복 주문 재현 과정](docs/order-duplicate-reproduction.md)
 
 ## Projects
 
